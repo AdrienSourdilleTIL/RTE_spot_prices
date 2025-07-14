@@ -34,9 +34,5 @@ jobs:
 
       - name: Commit and push changes
         run: |
-         git config user.name "github-actions"
-         git config user.email "actions@github.com"
          git add data/Raw/Spot_Price/*
-         git diff --quiet && echo "No changes to commit" || (git commit -m "Daily data update" && git push)
-
-
+         git commit -m "Add latest spot price data"
