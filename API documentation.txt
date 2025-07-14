@@ -1,0 +1,16 @@
+Update: 
+
+Data is updated every day, between 1:00 PM and 2:00 PM (French time). 
+If call comes before the update time, returned data is for the current day.
+After the update time, returned data are for the next day.
+
+
+Values:
+One value per hour interval. Table of values {JSON} structured as shown below:
+
+Name|Description|Type|Format
+
+Start_date|Start time interval|Date|YYYY-MM-DDThh:mm:sszzzzzz
+End_date|End time interval|Date|YYYY-MM-DDThh:mm:sszzzzzz
+value|Volume of the electricity market (in MW)|float|Decimal
+price|Price (in €/MWh)|float|Decimal.
