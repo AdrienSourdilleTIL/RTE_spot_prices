@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>France Spot Prices – 16 July 2025</title>
     <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script defer src="script.js"></script>
     <style>
       body {
@@ -13,10 +14,16 @@
       h1 {
         text-align: center;
       }
+      canvas {
+        display: block;
+        margin: 20px auto;
+        max-width: 800px;
+      }
     </style>
   </head>
   <body>
     <h1>France Electricity Spot Prices (2025-07-16)</h1>
+    <canvas id="priceChart" width="800" height="400"></canvas>
     <div id="table-container"></div>
   </body>
 </html>
