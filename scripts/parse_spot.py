@@ -7,7 +7,7 @@ def parse_json_to_csv():
     today_str = datetime.today().strftime("%Y-%m-%d")
     base_path = Path(__file__).resolve().parent.parent
     input_path = base_path / "data" / "Raw" / "Spot_Price" / f"spot_price_{today_str}.json"
-    output_dir = base_path / "data" / "Base"
+    output_dir = base_path / "docs" / "data"
     output_path = output_dir / f"spot_price_{today_str}.csv"
 
     if not input_path.exists():
